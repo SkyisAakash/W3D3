@@ -1,0 +1,20 @@
+html, body, div, span, h1, h2, h3, h4, a, ol, ul, li, form, label, article, aside, figure, figcaption, footer, header, nav {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  line-height: 1.5
+}
+
+
+ul, ol {
+  list-style: none;
+  /* background-color: yellow; */
+
+}
+
+
+
+img {
+  width: 100%;
+}
