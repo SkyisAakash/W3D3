@@ -27,5 +27,14 @@ class ShortenedUrl < ApplicationRecord
     ShortenedUrl.create!(short_url: code, long_url: longer, user_id: user.id)
   end
 
+  belongs_to :submitter,
+  primary_key: :id,
+  foreign_key: :user_id,
+  class_name: :User
+  # source: :user
+
+  has_many :visitors,
+  through: :visits,
+  source: :visit
 
 end
